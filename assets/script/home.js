@@ -14,8 +14,8 @@ fetch('https://randomuser.me/api/?results=10')
       const city = document.createElement('p');
 
       img.src = user.picture.thumbnail;
-      name.textContent = `${user.name.first} ${user.name.last}, ${user.location.city} `;
-      
+      name.textContent = `${user.name.first} ${user.name.last},`;
+      city.textContent = `${user.location.city}`;
       li.appendChild(img);
       li.appendChild(name);
       li.appendChild(city);
