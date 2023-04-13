@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+ <html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8 ">
+      <meta name="viewport" content="width=device-width,initial-scale1">
+      <meta name="author"content="Asif">
+      <meta name="description" content="Help people to find a job">
+      <meta name="keywords" content="html, css, web, web development,seo">
+      <title>Job finder</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" >
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+      <link rel="stylesheet" href="./assets/style/home.css" media="all">
+      <script src="./assets/script/home.js" defer></script>
+   </head>
+    <body>
+      <header>
+         <div class="container flex">
+            <div class="title">
+               <h1>Job Finder</h1>
+            </div>
+            <nav>
+               <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Connections</a></li>
+                <li><a href="#">Try Premium</a></li>
+               </ul>
+             </nav>
+             <div class="user-info">
+              <img src="./assets/image/Asif.jpg">
+            </div>
+         </div>
+       </header>
+       <main>
+         <div class="column">
+            <div class="profile-container">
+               <div class="profile-picture">
+                  <img src="./assets/image/Asif.jpg" alt="Asif"title="Asif Ahmed Bhuiyan">
+               </div>
+               <div class="profile-actions">
+                 <button class="follow-button">Follow</button>
+                 <button class="connect-button">Connect</button>
+               </div>
+               <p class="profile-details">
+                 I am Asif. I am a software developer.
+               </p>
+               <div class="profile-stats">
+                  <div class="profile-followers">
+                    <p>1000</p>
+                    <p>Followers</p>
+                  </div>
+                  <div class="profile-connections">
+                    <p>500</p>
+                    <p>Connections</p>
+                  </div>
+                </div>
+                <div class="profile-contact">
+                  <p>City: Winnipeg</p>
+                  <p>Website: <a href="https://www.example.com" target="_blank">www.example.com</a></p>
+                </div>
+              </div>
+             </div>
+         <div class="column">
+          <div id="post">
+           <h2>Posts</h2>
+          </div>
+          <form id="post-form" enctype="multipart/form-data">
+            <div class="post-input-container">
+              <textarea  name="post-text" placeholder="What's new?"></textarea>
+              <button type="submit">Post</button>
+            </div>
+          </form>
+          <section class="posts"></section>
+         </div>
+         <div class="column">
+          <div class="people">
+            <h2>People you may know</h2>
+            <ul id="user-list">
+            </ul>
+          </div>
+         </div>
+       </main>
+       <footer>
+         <p>Job Finder &copy; 2023</p>
+       </footer>
+    </body>
+ </html>
